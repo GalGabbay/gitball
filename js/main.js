@@ -2,7 +2,6 @@ gBallSize = 100
 gBallIncrement = 50
 
 
-
 function onBallClick() {
 
     var elBall = document.querySelector('.ball')
@@ -15,11 +14,12 @@ function onBallClick() {
     elBall.style.height = gBallSize + 'px'
     elBall.style.width = gBallSize + 'px'
     elBall.innerText = `${gBallSize}`
-
-
+    elBall.style.backgroundColor = getRandomColor()
 
 
 }
+
+
 
 
 
