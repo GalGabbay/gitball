@@ -2,11 +2,20 @@
 body {
 
     background-color: black;
+    text-align: center;
 
 }
 
 h1 {
 
     color: white;
-    
+}
+
+.ball {
+height: 100px;
+width: 100px;
+ border-radius: 50%;
+background-color: white;
+margin: auto;
+
 }
