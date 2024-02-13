@@ -1,19 +1,15 @@
-gBallSize = 100
-gBallIncrement = 50
 
 
 function onBallClick() {
 
     var elBall = document.querySelector('.ball')
     
-    if (gBallSize === 400) gBallSize = 50
+    ballDiamitor = getRandomInt(20,61)
 
 
-    gBallSize += gBallIncrement
-
-    elBall.style.height = gBallSize + 'px'
-    elBall.style.width = gBallSize + 'px'
-    elBall.innerText = `${gBallSize}`
+    elBall.style.height = ballDiamitor + 'px'
+    elBall.style.width = ballDiamitor + 'px'
+    elBall.innerText = `${ballDiamitor}`
     elBall.style.backgroundColor = getRandomColor()
 
 
